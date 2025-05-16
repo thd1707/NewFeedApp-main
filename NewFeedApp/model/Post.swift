@@ -6,3 +6,17 @@
 //
 
 import Foundation
+struct Post: Identifiable {
+    let id = UUID()
+    let username: String
+    var userAvatar: String = "plus"
+    let postImage: String?
+    let caption: String
+    let likescount: Int
+    
+    var commentscount: Int
+    var repostcount: Int
+    var sharescount: Int
+    
+    let timestamp: Date
+}

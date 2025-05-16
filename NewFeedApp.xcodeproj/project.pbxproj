@@ -11,6 +11,10 @@
 		508143232DD0542500497E6D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508143222DD0542500497E6D /* ContentView.swift */; };
 		508143252DD0542800497E6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 508143242DD0542800497E6D /* Assets.xcassets */; };
 		508143282DD0542800497E6D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 508143272DD0542800497E6D /* Preview Assets.xcassets */; };
+		508143372DD0563600497E6D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508143362DD0563600497E6D /* Post.swift */; };
+		508143392DD05A4800497E6D /* mocData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508143382DD05A4800497E6D /* mocData.swift */; };
+		5081433B2DD060DA00497E6D /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5081433A2DD060DA00497E6D /* SwiftUIView.swift */; };
+		5081433F2DD0629800497E6D /* singleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5081433E2DD0629800497E6D /* singleRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		508143222DD0542500497E6D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		508143242DD0542800497E6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		508143272DD0542800497E6D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		508143362DD0563600497E6D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		508143382DD05A4800497E6D /* mocData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mocData.swift; sourceTree = "<group>"; };
+		5081433A2DD060DA00497E6D /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		5081433E2DD0629800497E6D /* singleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = singleRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,11 @@
 		5081431F2DD0542500497E6D /* NewFeedApp */ = {
 			isa = PBXGroup;
 			children = (
+				508143332DD054A800497E6D /* model */,
+				508143312DD0548800497E6D /* utils */,
+				508143302DD0547E00497E6D /* sample-data */,
+				5081432F2DD0546300497E6D /* views */,
+				5081432E2DD0543500497E6D /* components */,
 				508143202DD0542500497E6D /* NewFeedAppApp.swift */,
 				508143222DD0542500497E6D /* ContentView.swift */,
 				508143242DD0542800497E6D /* Assets.xcassets */,
@@ -65,6 +78,45 @@
 				508143272DD0542800497E6D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5081432E2DD0543500497E6D /* components */ = {
+			isa = PBXGroup;
+			children = (
+				5081433E2DD0629800497E6D /* singleRow.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		5081432F2DD0546300497E6D /* views */ = {
+			isa = PBXGroup;
+			children = (
+				5081433A2DD060DA00497E6D /* SwiftUIView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		508143302DD0547E00497E6D /* sample-data */ = {
+			isa = PBXGroup;
+			children = (
+				508143382DD05A4800497E6D /* mocData.swift */,
+			);
+			path = "sample-data";
+			sourceTree = "<group>";
+		};
+		508143312DD0548800497E6D /* utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		508143332DD054A800497E6D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				508143362DD0563600497E6D /* Post.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +189,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				508143372DD0563600497E6D /* Post.swift in Sources */,
+				508143392DD05A4800497E6D /* mocData.swift in Sources */,
+				5081433F2DD0629800497E6D /* singleRow.swift in Sources */,
 				508143232DD0542500497E6D /* ContentView.swift in Sources */,
 				508143212DD0542500497E6D /* NewFeedAppApp.swift in Sources */,
+				5081433B2DD060DA00497E6D /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

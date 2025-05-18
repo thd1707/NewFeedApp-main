@@ -10,6 +10,7 @@ import SwiftUI
 struct singleRow: View {
     @State var postContent: Post
     
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             HStack {
@@ -45,14 +46,17 @@ struct singleRow: View {
             }
             Text(postContent.caption)
                 .font(.body)
+        
             
-            // Likes
-            Text("❤️ \(postContent.likescount)")
-                .font(.subheadline)
-                .foregroundColor(.pink)
             
-            // Buttons: Comment – Repost – Share
+            // Buttons: like - comment - share - repost
             HStack(spacing: 20) {
+                Button(action: {
+                    postContent.likescount += 1
+                }) {
+                    Label("\(postContent.likescount)", systemImage: "heart.fill")
+                        .foregroundColor(.pink)
+                }
                 Label("\(postContent.commentscount)", systemImage: "bubble.right") // Comment
                 Label("\(postContent.repostcount)", systemImage: "arrow.2.squarepath") // Repost
                     .padding(6)

@@ -12,7 +12,7 @@ struct Post: Identifiable {
     var userAvatar: String = "plus"
     let postImage: String?
     let caption: String
-    let likescount: Int
+    var likescount: Int
     
     var commentscount: Int
     var repostcount: Int
